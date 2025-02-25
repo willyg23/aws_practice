@@ -1,4 +1,4 @@
-# ec2_auto_scaling_experiement
+# aws_practice
 I used this project to practice my AWS skills regarding: Networking, APIs, Availability, Scalability, and Load Balancing.
 <br>
 <br>
