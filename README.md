@@ -1,5 +1,6 @@
 # aws_practice
 I used this project to practice my AWS skills regarding: Networking, APIs, Availability, Scalability, and Load Balancing.
+The project was initially a part of my Senior Design project. Although I refactored the AWS architecture for Senior Design, so I thought I'd display this code here.
 <br>
 <br>
 Architecture Diagram:
