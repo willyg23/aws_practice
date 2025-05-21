@@ -7,13 +7,15 @@ I used this project to practice my AWS skills regarding: Networking, APIs, Avail
 The aws architecture was initially created to use EC2, load balancing, and auto-scaling (instead of lambda), and that initial version of the project can be seen [here](https://github.com/willyg23/aws_practice/tree/0b378fe346bea511106ac5d708a35b9d16e65bdc)
 <br>
 <br>
-![image](https://github.com/user-attachments/assets/10f083dc-b55c-4c69-8225-b413e869c5b7)
+
 <br>
 <br>
 Architecture Diagram:
-![Pasted Graphic 1](https://github.com/user-attachments/assets/52bfd532-addc-4aa2-8355-0879f1cc28e9)
+![image](https://github.com/user-attachments/assets/5def7a0c-cd06-44ee-b8e9-cce5957f4c42)
 (we only used 1 database, because multi-az databases are not in the AWS free tier)
 
 <br>
 <br>
 The project was also used as part of my senior design project, which my team won an [award](https://www.linkedin.com/posts/william-griner_happy-to-announce-that-my-senior-design-group-activity-7330832392368074754-os8e?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEbB8FUBcV2OpSDRUf_6UPde4yrsl9VRh2M) for
+<br>
+![image](https://github.com/user-attachments/assets/10f083dc-b55c-4c69-8225-b413e869c5b7)
