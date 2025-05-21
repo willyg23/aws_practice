@@ -8,14 +8,12 @@ The aws architecture was initially created to use EC2, load balancing, and auto-
 <br>
 <br>
 
-<br>
-<br>
 Architecture Diagram:
 ![image](./senior_design_architecture_diagram.png)
 (we only used 1 database, because multi-az databases are not in the AWS free tier)
-
 <br>
 <br>
 The project was also used as part of my senior design project, which my team won an [award](https://www.linkedin.com/posts/william-griner_happy-to-announce-that-my-senior-design-group-activity-7330832392368074754-os8e?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEbB8FUBcV2OpSDRUf_6UPde4yrsl9VRh2M) for
-<br>
-![image](https://github.com/user-attachments/assets/10f083dc-b55c-4c69-8225-b413e869c5b7)
+
+![image](./senior_design_pic_1.png)
+
