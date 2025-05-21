@@ -1,3 +1,5 @@
+### create_schema_endpoint
+
 CREATE_SCHEMA = """
 CREATE TABLE IF NOT EXISTS users (
     uuid UUID PRIMARY KEY,
@@ -39,3 +41,90 @@ CREATE TABLE IF NOT EXISTS error_parts (
 
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 """
+
+
+
+### get_user_cars_endpoint
+
+# SQL query to join cars and car_details tables for a specific user
+GET_USER_CARS_DETAILS_QUERY = """
+SELECT c.car_id, cd.detail_id, cd.make, cd.model, cd.year, cd.mileage, 
+       cd.last_maintenance_checkup, cd.last_oil_change, cd.purchase_date, 
+       cd.last_brake_pad_change
+FROM cars c
+LEFT JOIN car_details cd ON c.car_id = cd.car_id
+WHERE c.user_uuid = %s
+"""
+
+
+
+### create_fake_user_endpoint
+
+# SQL query to insert a new user
+INSERT_USER_QUERY = """
+INSERT INTO users (uuid, email, location) VALUES (%s, %s, %s)
+"""
+
+# SQL query to insert a new car and return its ID
+INSERT_CAR_QUERY = """
+INSERT INTO cars (user_uuid) VALUES (%s) RETURNING car_id
+"""
+
+# SQL query to insert car details
+INSERT_CAR_DETAILS_QUERY = """
+INSERT INTO car_details
+(car_id, make, model, year, mileage, last_maintenance_checkup,
+last_oil_change, purchase_date, last_brake_pad_change)
+VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+"""
+
+
+
+### delete_user_car_endpoint
+
+# SQL query to verify a car belongs to a user
+VERIFY_CAR_BELONGS_TO_USER_QUERY = """
+    SELECT car_id FROM cars
+    WHERE car_id = %s AND user_uuid = %s
+"""
+
+# SQL query to delete a car
+DELETE_CAR_QUERY = """
+    DELETE FROM cars
+    WHERE car_id = %s
+"""
+
+### update_car_details_endpoint
+
+# SQL query to verify a car belongs to a user
+VERIFY_CAR_OWNERSHIP_QUERY = """
+SELECT 1 FROM cars WHERE car_id = %s AND user_uuid = %s
+"""
+
+# SQL query to check if car_details record exists
+CHECK_CAR_DETAILS_EXIST_QUERY = """
+SELECT 1 FROM car_details WHERE car_id = %s
+"""
+
+### add_user_car
+# Query to verify user exists
+CHECK_USER_EXISTS_QUERY = """
+SELECT 1 FROM users WHERE uuid = %s
+"""
+
+# Query to insert a new car
+INSERT_CAR_QUERY = """
+INSERT INTO cars (user_uuid) VALUES (%s) RETURNING car_id
+"""
+
+# Query to insert car details
+INSERT_CAR_DETAILS_QUERY = """
+INSERT INTO car_details
+(car_id, make, model, year, mileage, last_maintenance_checkup,
+ last_oil_change, purchase_date, last_brake_pad_change)
+VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+RETURNING * 
+"""
+
+
+### get_car_details_endpoint
