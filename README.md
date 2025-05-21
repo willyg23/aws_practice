@@ -1,9 +1,13 @@
 # aws_practice
+See the project in action here (add video link)
+
 I used this project to practice my AWS skills regarding: Networking, APIs, Availability, Scalability, and Load Balancing.
 <br>
-The project was initially a part of my Senior Design project. Although I refactored the AWS architecture for Senior Design, so I thought I'd display this code here.
+The aws architecture was initially created to use EC2, load balancing, and auto-scaling (instead of lambda), and that initial version of the project can be seen in this commit
+<br>
+The project was also used as part of my senior design project, which my team won an award for (out of how many teams, + link)
 <br>
 <br>
 Architecture Diagram:
-![image](https://github.com/user-attachments/assets/63b69cc4-55e7-41b8-b99c-c364144255e5)
-(the private subnets are for databases, though I ended up not creating any databases.)
+![Pasted Graphic 1](https://github.com/user-attachments/assets/52bfd532-addc-4aa2-8355-0879f1cc28e9)
+( we only used 1 database, because multi-az databases are not in the AWS free tier :( )
