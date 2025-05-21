@@ -1,0 +1,32 @@
+meta {
+  name: add_user_car
+  type: http
+  seq: 8
+}
+
+post {
+  url: https://ii1orwzkzl.execute-api.us-east-2.amazonaws.com/dev/user/{{user_uuid}}/car/add_user_car
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+    {
+      "make": "Dodge",
+      "model": "Hellcat",
+      "year": 2021,
+      "mileage": 42069,
+      "last_maintenance_checkup": "2024-01-10",
+      "last_oil_change": "2024-03-15",       
+      "purchase_date": "2022-05-20",         
+      "last_brake_pad_change": null       
+    }
+}
+
+vars:pre-request {
+  user_uuid: e84de32d-0015-46a9-a779-efb42ef98fc7
+}

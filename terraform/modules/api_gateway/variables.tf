@@ -8,14 +8,17 @@ variable "vpc_id" {
   type        = string
 }
 
-variable "alb_listener_arn" {
-  description = "ARN of the ALB listener"
+variable "lambda_invoke_arn" {
+  description = "The invoke ARN of the Lambda function"
   type        = string
 }
 
-variable "alb_dns_name" {
-  description = "DNS name of the Application Load Balancer"
+variable "lambda_function_name" {
+  description = "The name of the Lambda function"
   type        = string
 }
 
-
+variable "cloudwatch_log_group_arn" {
+  description = "ARN of the CloudWatch Log Group for API Gateway access logs"
+  type        = string
+}
