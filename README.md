@@ -1,7 +1,6 @@
 # aws_practice
 See the project in action + a video explaining the project [here](https://www.linkedin.com/posts/william-griner_heres-a-deeper-explanation-the-cloud-architecture-activity-7330838046499635201-H9ln?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEbB8FUBcV2OpSDRUf_6UPde4yrsl9VRh2M)
 
-I used this project to practice my cloud skills regarding: Networking, Terrform, Failover, Scalability, Database administration, Logging, and Load Balancing.
 <br>
 <br>
 The aws architecture was initially created to use EC2, load balancing, and auto-scaling (instead of lambda), and that initial version of the project can be seen [here](https://github.com/willyg23/aws_practice/tree/0b378fe346bea511106ac5d708a35b9d16e65bdc)
