@@ -11,7 +11,7 @@ The aws architecture was initially created to use EC2, load balancing, and auto-
 <br>
 <br>
 Architecture Diagram:
-![image](https://github.com/user-attachments/assets/5def7a0c-cd06-44ee-b8e9-cce5957f4c42)
+![image](./senior_design_architecture_diagram.png)
 (we only used 1 database, because multi-az databases are not in the AWS free tier)
 
 <br>
